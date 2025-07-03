@@ -13,13 +13,13 @@ public class Main {
             System.out.println("[5] Exit");
             int secim = scanner.nextInt();
             if (secim == 0) {
-                System.out.println("Çıkılıyor...");
+                System.out.println("Exit...");
                 break;
             }
 
-            System.out.print("1. sayı: ");
+            System.out.print("1st number: ");
             double sayi1 = scanner.nextDouble();
-            System.out.print("2. sayı: ");
+            System.out.print("2nd number: ");
             double sayi2 = scanner.nextDouble();
 
             double sonuc = 0;
@@ -38,11 +38,11 @@ public class Main {
                     sonuc = calc.divide(sayi1, sayi2);
                     break;
                 default:
-                    System.out.println("Geçersiz seçim!");
+                    System.out.println("Unvalid choice!");
                     continue;
             }
 
-            System.out.println("Sonuç: " + sonuc);
+            System.out.println("Result: " + sonuc);
         }
 
         scanner.close();
